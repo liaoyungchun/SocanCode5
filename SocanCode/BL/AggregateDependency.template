@@ -1,0 +1,62 @@
+﻿        $[增加一条数据]$
+        public void Add($ModelNameSpace$.$TableName$ model)
+        {
+            dal.Add(model);
+        }
+
+        $[更新一条数据]$
+        public void Update($ModelNameSpace$.$TableName$ model)
+        {
+            dal.Update(model);
+        }
+
+        $[删除一条数据]$
+        public void Delete($KeyArguments$)
+        {
+            dal.Delete($KeyArgumentValues$);
+        }
+
+        $[是否存在该记录]$
+        public bool Exists($KeyArguments$)
+        {
+            return dal.Exists($KeyArgumentValues$);
+        }
+
+        $[得到一个对象实体]$
+        public $ModelNameSpace$.$TableName$ GetModel($KeyArguments$)
+        {
+	        $ModelNameSpace$.$TableName$ model = null;
+
+            if (!EnableCache)
+	        {
+                model = dal.GetModel($KeyArgumentValues$);
+	        }
+            else
+	        {
+                string key = $CacheKey$;
+                if (GetModelCache(key) != null)
+                {
+                    model = ($ModelNameSpace$.$TableName$)GetModelCache(key);
+                }
+                else
+                {
+                    model = dal.GetModel($KeyArgumentValues$);
+                    AggregateCacheDependency cd = CacheDependencyFactory.DependencyFacade.Get$AfterNamespace$$TableName$CacheDependency();
+                    TryAddModelCache(key, model, cd, Cache.NoAbsoluteExpiration, Cache.NoSlidingExpiration, System.Web.Caching.CacheItemPriority.Normal, null);
+                }
+            }
+
+            return model;
+        }
+
+        $[获得泛型数据列表]$
+        public List<$ModelNameSpace$.$TableName$> GetList()
+        {
+            return dal.GetList();
+        }
+
+        $[分页获取泛型数据列表]$
+        public PageList<$ModelNameSpace$.$TableName$> GetPageList(PageInfo pi)
+        {
+            return dal.GetPageList(pi);
+        }

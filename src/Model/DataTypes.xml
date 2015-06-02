@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataTypes>
+  <DataType DbType="Byte" SqlType="tinyint" OleDbType="17" MySqlType="tinyint" CSharpType="byte?" DBUtilityConvertMethod="GetByte" CSharpConvertMethod="Convert.ToByte"/>
+  <DataType DbType="SByte" SqlType="" OleDbType="" MySqlType="" CSharpType="sbyte?" DBUtilityConvertMethod="GetSByte" CSharpConvertMethod="Convert.ToSByte"/>
+  <DataType DbType="Int16" SqlType="smallint" OleDbType="2" MySqlType="smallint" CSharpType="Int16?" DBUtilityConvertMethod="GetInt16" CSharpConvertMethod="Convert.ToInt16"/>
+  <DataType DbType="UInt16" SqlType="" OleDbType="" MySqlType="" CSharpType="UInt16?" DBUtilityConvertMethod="GetUInt16" CSharpConvertMethod="Convert.ToUInt16"/>
+  <DataType DbType="Int32" SqlType="int" OleDbType="3"  MySqlType="mediumint,int" CSharpType="int?" DBUtilityConvertMethod="GetInt" CSharpConvertMethod="Convert.ToInt32"/>
+  <DataType DbType="UInt32" SqlType="" OleDbType=""  MySqlType="" CSharpType="uint?" DBUtilityConvertMethod="GetUInt" CSharpConvertMethod="Convert.ToUInt32"/>
+  <DataType DbType="Int64" SqlType="bigint" OleDbType=""  MySqlType="bigint" CSharpType="long?" DBUtilityConvertMethod="GetLong" CSharpConvertMethod="Convert.ToInt64"/>
+  <DataType DbType="UInt64" SqlType="" OleDbType="" MySqlType="" CSharpType="ulong?" DBUtilityConvertMethod="GetULong" CSharpConvertMethod="Convert.ToUInt64"/>
+  
+  <DataType DbType="Single" SqlType="real" OleDbType="4"  MySqlType="" CSharpType="float?" DBUtilityConvertMethod="GetFloat" CSharpConvertMethod="Convert.ToSingle"/>
+  <DataType DbType="Double" SqlType="float,decimal" OleDbType="131,5" MySqlType="real,double,decimal,float" CSharpType="double?" DBUtilityConvertMethod="GetDouble" CSharpConvertMethod="Convert.ToDouble"/>
+  
+  <DataType DbType="Decimal" SqlType="numeric" OleDbType=""  MySqlType="numeric" CSharpType="decimal?" DBUtilityConvertMethod="GetDecimal" CSharpConvertMethod="Convert.ToDecimal"/>
+  <DataType DbType="VarNumeric" SqlType="" OleDbType="" MySqlType="" CSharpType="decimal?" DBUtilityConvertMethod="GetDecimal" CSharpConvertMethod="Convert.ToDecimal"/>
+  <DataType DbType="Currency" SqlType="smallmoney,money" OleDbType="6"  MySqlType="" CSharpType="decimal?" DBUtilityConvertMethod="GetDecimal" CSharpConvertMethod="Convert.ToDecimal"/>
+  
+  <DataType DbType="Boolean" SqlType="bit" OleDbType="11" MySqlType="bit,bool" CSharpType="bool?" DBUtilityConvertMethod="GetBool" CSharpConvertMethod="Convert.ToBoolean"/>
+  
+  <DataType DbType="Guid" SqlType="uniqueidentifier" OleDbType="72"  MySqlType="" CSharpType="Guid?" DBUtilityConvertMethod="GetGuid" CSharpConvertMethod="new Guid"/>
+
+  <DataType DbType="Date" SqlType="" OleDbType=""  MySqlType="year,date" CSharpType="DateTime?" DBUtilityConvertMethod="GetDateTime" CSharpConvertMethod="Convert.ToDateTime"/>
+  <DataType DbType="Time" SqlType="" OleDbType=""  MySqlType="time" CSharpType="DateTime?" DBUtilityConvertMethod="GetDateTime" CSharpConvertMethod="Convert.ToDateTime"/>
+  <DataType DbType="DateTime" SqlType="smalldatetime,datetime,timestamp" OleDbType="7" MySqlType="timestamp,datetime" CSharpType="DateTime?" DBUtilityConvertMethod="GetDateTime" CSharpConvertMethod="Convert.ToDateTime"/>
+
+  <DataType DbType="Xml" SqlType="xml" OleDbType="" MySqlType="" CSharpType="string" DBUtilityConvertMethod="GetString" CSharpConvertMethod="Convert.ToString"/>
+  <DataType DbType="AnsiStringFixedLength" SqlType="char" OleDbType="" MySqlType="" CSharpType="string" DBUtilityConvertMethod="GetString" CSharpConvertMethod="Convert.ToString"/>
+  <DataType DbType="AnsiString" SqlType="varchar" OleDbType=""  MySqlType="" CSharpType="string" DBUtilityConvertMethod="GetString" CSharpConvertMethod="Convert.ToString"/>
+  <DataType DbType="StringFixedLength" SqlType="nchar" OleDbType="" MySqlType="char" CSharpType="string" DBUtilityConvertMethod="GetString" CSharpConvertMethod="Convert.ToString"/>
+  <DataType DbType="String" SqlType="nvarchar,text,ntext" OleDbType="130" MySqlType="tinytext,mediumtext,text,varchar,longtext" CSharpType="string" DBUtilityConvertMethod="GetString" CSharpConvertMethod="Convert.ToString"/>
+
+  <DataType DbType="Binary" SqlType="varbinary,binary,sql_variant,image" OleDbType="128" MySqlType="varbinary,binary" CSharpType="byte[]" DBUtilityConvertMethod="GetBinary" CSharpConvertMethod="Convert.ToByte"/>
+  <DataType DbType="Object" SqlType="*" OleDbType="*" MySqlType="*" CSharpType="object" DBUtilityConvertMethod="" CSharpConvertMethod=""/>
+</DataTypes>

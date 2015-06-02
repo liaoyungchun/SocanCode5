@@ -1,0 +1,2 @@
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlServerDAL", "SqlServerDAL\SqlServerDAL.csproj", "{17691D95-B5E5-421A-A9E1-2658774C6789}"
+EndProject

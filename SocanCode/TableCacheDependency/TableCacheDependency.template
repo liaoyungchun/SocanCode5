@@ -1,0 +1,21 @@
+﻿//------------------------------------------------------------------------------
+// 创建标识: Copyright (C) $Year$ Socansoft.com 版权所有
+// 创建描述: SocanCode代码生成器 V$Version$ 自动创建于 $CreateTime$
+//
+// 功能描述: 
+//
+// 修改标识: 
+// 修改描述: 
+//------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace $TableCacheDependencyNamespace$
+{
+    public class $TableName$ : TableDependency
+    {
+        public $TableName$() : base("$DBName$", "$TableName$") { }
+    }
+}

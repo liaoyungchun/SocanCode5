@@ -1,0 +1,39 @@
+﻿//------------------------------------------------------------------------------
+// 创建标识: Copyright (C) $Year$ Socansoft.com 版权所有
+// 创建描述: SocanCode代码生成器 V$Version$ 自动创建于 $CreateTime$
+//
+// 功能描述: 
+//
+// 修改标识: 
+// 修改描述: 
+//------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Web.Caching;
+using System.Configuration;
+
+namespace $TableCacheDependencyNamespace$
+{
+    public class TableDependency : ICacheDependency.ISocansoftCacheDependency
+    {
+        protected AggregateCacheDependency dependency = new AggregateCacheDependency();
+
+        protected TableDependency(string dbName, string tables)
+        {
+            string[] tableArray = tables.Split(new char[] { ',' });
+            foreach (string table in tableArray)
+                dependency.Add(new SqlCacheDependency(dbName, table));
+        }
+
+        #region ICacheDependency 成员
+
+        public AggregateCacheDependency GetDependency()
+        {
+            return dependency;
+        }
+
+        #endregion
+    }
+}

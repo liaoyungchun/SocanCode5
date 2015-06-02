@@ -1,0 +1,27 @@
+﻿//------------------------------------------------------------------------------
+// 创建标识: Copyright (C) 2007-$Year$ Socansoft.com 版权所有
+// 创建描述: SocanCode代码生成器 V$Version$ 自动创建于 $CreateTime$
+//
+// 功能描述: 
+//
+// 修改标识: 
+// 修改描述: 
+//------------------------------------------------------------------------------
+
+/// <summary>
+/// Controls_$TableName$Grid 类。
+/// </summary>
+/// <remarks>
+/// 自动生成的类。
+/// </remarks>
+public partial class Controls_$AfterNamespace$$TableName$Grid {
+    
+    /// <summary>
+    /// grd$TableName$ 控件。
+    /// </summary>
+    /// <remarks>
+    /// 自动生成的字段。
+    /// 要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Repeater grd$TableName$;
+}
